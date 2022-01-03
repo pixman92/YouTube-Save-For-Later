@@ -59,10 +59,39 @@ function pushJSONStringToFirebase(){
     
     // adding('YouTube', {youtubes});    // the variable name becomes the 'key' to the entry
 }
+var youtubesObj;
+function pullData(){
+    youtubesObj = myJSONLyricData.parseMe();
+    return youtubesObj;
+}
+
 // =============================
 
 
 
+function makeASingleYouTubeCard(lyricDataVar, clickNumberVar, commentDataVar){
+    var htmlStr =     ["<div class='w3-card'>",
+    "<div class='lyricData'>", lyricDataVar, "</div>",
+    "<div class='clickNumber'>",clickNumberVar,"</div>",
+    "<div class='commentData'>", commentDataVar, "</div>",
+"</div>"].join();
+
+
+}
+
+
+// =================
+var arrayMe = ["mainHomePage", "dynamicURLPage"];
+function hide(){
+        for (var i = 0; i < arrayMe.length; i++) {
+            document.querySelector('.'+arrayMe[i]).style.display='none';
+        }
+
+}
+
+function show(classIt){
+    document.querySelector("."+classIt).style.display='block';
+}
 
 
 
