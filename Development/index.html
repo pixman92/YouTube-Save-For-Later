@@ -8,6 +8,9 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 
 
+    <!-- Gator js -->
+    <script src="https://craig.global.ssl.fastly.net/js/gator.min.js"></script>
+
     <!-- W3 CSS library -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
@@ -36,10 +39,10 @@
 
 
     <!-- ============================= -->
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js" defer></script>
     <!-- ============================= -->
-    <script type="module">
+    <script>
 
         const firebaseConfig = {
             apiKey: "AIzaSyBKUo0QBK33zIIfpUnrt-XIdxEPpRrSZto",
@@ -53,15 +56,15 @@
         console.log('fire ', firebaseConfig);
         
         // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        var db = firebase.firestore();
+        // firebase.initializeApp(firebaseConfig);
+        // var db = firebase.firestore();
         // function makeFirebaseInstance(){
         //     firebase.initializeApp(firebaseConfig);
         //     //     db = firebase.database();
         //     var db = firebase.firestore();
 
         // }
-        
+
     </script>
     
     <!-- <script src="firebaseStuff.js"></script> -->
@@ -72,7 +75,7 @@
 
     <!-- ============================= -->
     <script src='./js/script.js'></script>
-    <!-- <script src='./js/firebaseStuff.js'></script> -->
+    <script src='./js/firebaseStuff.js'></script>
 
     
     <!-- =================== -->
@@ -85,7 +88,7 @@
     </div>
     <div class="dynamicURLPage">
         <div class="dynamicListHTML">
-            <h1>Test</h1>
+            <div class="fillMeIn"></div>
 
         </div>
 
@@ -95,7 +98,7 @@
         <div class="lyricData">
         </div>
         <div class="clickNumber">0</div>
-        <div class="commentData"></div>
+        <div class="commentData"></div>z
     </div> -->
 
     <!-- ["<div class='w3-card'>",
