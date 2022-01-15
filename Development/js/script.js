@@ -9,7 +9,9 @@
 
 window.onload = () => {
     // var db = firebase.firestore();
-    run();
+    // run();
+    makeJSONLyricDataInstance();
+
 }
 // var db = firebase.firestore();
 
@@ -63,6 +65,7 @@ function saveLyricData(lyricData, clickNumber, commentData) {
 // =============================
 var youtubes;
 function pushJSONStringToFirebase() {
+    //DON'T REALLY USE
     //make sure to run: 
     youtubes = myJSONLyricData.stringMe();
 
@@ -264,10 +267,10 @@ function pullEmailGetUIDWhere(emailSearch){
     });
 }
 
+var foundMe = false;
 function runningThroughSavedArrays(savedArrayEmails, savedArrayUID, emailSearch){
     //function that takes the arrays, and runs through them
     //to find the corresponding email
-    var foundMe = false;
     savedArrayEmails.forEach((item, index)=>{
         // console.log(item) 
         // console.log(item.email)
@@ -302,7 +305,10 @@ function pullDataBasedOnUID(){
     }
 }
 
-function addToDodBasedOnUID(objName, dataString){
+function addToFirebaseBasedOnUID(objName, dataString){
+    //pushes custom obj - using <objName> & <dataString>
+    // to make custom obj, that is pushed to a record - found by UID
+    // using previous <pullEmailGetUID()> function
     var obj = {};
     // obj[0] = objName;
     obj[objName.toString()] = dataString;
