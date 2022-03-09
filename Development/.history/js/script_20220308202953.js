@@ -340,7 +340,7 @@ function hide() {
 }
 
 function show(classIt) {
-    $("." + classIt).show();
+    document.("." + classIt).show();
 }
 
 

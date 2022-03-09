@@ -238,6 +238,7 @@ function pushToEmail(decision, newEmail){
     }
 }
 
+
 var userUID = "";
 var savedUIDstr ="";
 async function pullEmailGetUID(emailSearch){
@@ -340,7 +341,7 @@ function hide() {
 }
 
 function show(classIt) {
-    $("." + classIt).show();
+    document.("." + classIt).show();
 }
 
 

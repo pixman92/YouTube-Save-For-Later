@@ -45,7 +45,8 @@ async function maintainArrayListOfNumberTracking(){
 
     if(wholeDocDataPull[0]['arrayOfListNumbers']==undefined){
         // arrayTrackJSON = new JSON_Instance();
-        // arrayTrackJSON.addObj([['listNumbers',[1]]])
+        // arrayTrackJSON.addObj([['listNumbers',[1
+    ]]])
 
     }else{
         var tmpStoreOfArrayList = wholeDocDataPull[0]["arrayOfListNumbers"]['listNumbers']['length'-1]
