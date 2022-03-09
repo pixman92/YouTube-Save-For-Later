@@ -38,14 +38,11 @@ function makeJSONLyricDataInstance() {
 
 var arrayOfIndexes = 0;
 
-function saveLyricData(lyricData, clickNumber, commentData, playlistValue) {
+function saveLyricData(lyricData, clickNumber, commentData) {
     //saveLyricData(['searchText', 'healing begins']);
     if (arrayOfIndexes == 0) {
-        // myJSONLyricData.addToObj([[0, ['listName', '1']]]);
-        // myJSONLyricData.addToObj([[0, [['lyricData', lyricData], ['clickNumber', clickNumber], ['comments', commentData]]]]);
-
-        myJSONLyricData.addToObj([[[0], ['email', userEmail]]])
-
+        myJSONLyricData.addToObj([[0, ['listName', '1']]]);
+        myJSONLyricData.addToObj([[0, [['lyricData', lyricData], ['clickNumber', clickNumber], ['comments', commentData]]]]);
         arrayOfIndexes++
         console.log('arrayOfIndexes: ', arrayOfIndexes);
     } else {
