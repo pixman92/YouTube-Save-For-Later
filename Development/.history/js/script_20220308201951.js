@@ -55,13 +55,13 @@ function saveLyricData(lyricData, commentData, clickNumber, playlistValue) {
         // console.log('arrayOfIndexes: ', arrayOfIndexes);
     } else {
         // var increase = arrayOfIndexes[arrayOfIndexes.length]++;
-        // var increase = arrayOfIndexes++;
+        var increase = arrayOfIndexes++;
 
-        // another lyric added
-        myJSONLyricData.addToObj([[[0], ['lyricData', lyricData], ['commentData', commentData], ["clickNumber", clickNumber], ['playlistValue', 'main']]]);
+        // myJSONLyricData.addMoreToIndex(increase);
+        // arrayOfIndexes[arrayOfIndexes.length++] = increase;
+        console.log('increase', increase);
 
-        myJSONLyricData.print();
-
+        myJSONLyricData.addToObj([[0, [['lyricData', lyricData], ['clickNumber', clickNumber], ['comments', commentData]]]]);
     }
     // myJSONLyricData.addToObj([[0, [data]]]);
     myJSONLyricData.print();
