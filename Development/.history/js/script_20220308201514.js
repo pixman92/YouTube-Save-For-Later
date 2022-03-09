@@ -21,8 +21,8 @@ window.onload = () => {
 function run() {
     makeJSONLyricDataInstance();
     hide();
-    show('largeWidthLyrics');
-    saveLyricData('time after time', 'love this song!', '0');
+    show
+    saveLyricData('time after time', 0, '...');
     saveLyricData('come back to me', 0, '');
     saveLyricData('breaking the Habit]', 0, '');
 
