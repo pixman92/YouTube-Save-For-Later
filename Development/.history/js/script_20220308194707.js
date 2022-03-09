@@ -38,7 +38,7 @@ function makeJSONLyricDataInstance() {
 
 var arrayOfIndexes = 0;
 
-function saveLyricData(lyricData, commentData, clickNumber, playlistValue) {
+function saveLyricData(lyricData, clickNumber, commentData, playlistValue) {
     //saveLyricData(['searchText', 'healing begins']);
     if (arrayOfIndexes == 0) {
         // myJSONLyricData.addToObj([[0, ['listName', '1']]]);
@@ -47,10 +47,9 @@ function saveLyricData(lyricData, commentData, clickNumber, playlistValue) {
         myJSONLyricData.addToObj([[[0], ['email', savedMainEmail]]])
 
         // arrayOfIndexes++
-        myJSONLyricData.addToObj([[[0], ['lyricData', lyricData], ['commentData', commentData], ["clickNumber", clickNumber], ['playlistValue', 'main']]]);
+        myJSONLyricData.addToObj([[[0], ['lyricData']]])
 
-        myJSONLyricData.print();
-        // console.log('arrayOfIndexes: ', arrayOfIndexes);
+        console.log('arrayOfIndexes: ', arrayOfIndexes);
     } else {
         // var increase = arrayOfIndexes[arrayOfIndexes.length]++;
         var increase = arrayOfIndexes++;

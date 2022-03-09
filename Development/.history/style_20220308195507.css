@@ -4,8 +4,3 @@
     flex-direction: column;
   
 }
-.largeWidthLyrics{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}

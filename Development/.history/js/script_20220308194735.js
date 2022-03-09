@@ -47,10 +47,9 @@ function saveLyricData(lyricData, commentData, clickNumber, playlistValue) {
         myJSONLyricData.addToObj([[[0], ['email', savedMainEmail]]])
 
         // arrayOfIndexes++
-        myJSONLyricData.addToObj([[[0], ['lyricData', lyricData], ['commentData', commentData], ["clickNumber", clickNumber], ['playlistValue', 'main']]]);
+        myJSONLyricData.addToObj([[[0], ['lyricData', lyricData], [cu]]])
 
-        myJSONLyricData.print();
-        // console.log('arrayOfIndexes: ', arrayOfIndexes);
+        console.log('arrayOfIndexes: ', arrayOfIndexes);
     } else {
         // var increase = arrayOfIndexes[arrayOfIndexes.length]++;
         var increase = arrayOfIndexes++;
