@@ -1,11 +1,11 @@
-// window.onload = ()=>{
-//   init();
-// };
+window.onload = ()=>{
+  init();
+};
 var db;
-async function init(){
+function init(){
   var firebaseApp = firebase.initializeApp(firebaseConfig);
 
-    db = await firebaseApp.firestore();
+    db = firebaseApp.firestore();
 }
 
 function pullData(){

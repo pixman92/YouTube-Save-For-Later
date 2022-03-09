@@ -7,12 +7,11 @@
 // TODO - push song data, pull song data
 // TODO - main list as a Record for the lists of data
 
-window.onload = async() => {
+window.onload = () => {
     // var db = firebase.firestore();
     // run();
     makeJSONLyricDataInstance();
     run();
-    await init();
 
 }
 // var db = firebase.firestore();
