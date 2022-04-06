@@ -7,13 +7,12 @@
 // TODO - push song data, pull song data
 // TODO - main list as a Record for the lists of data
 
-window.onload = async() => {
+window.onload = () => {
     // var db = firebase.firestore();
     // run();
+    init();
     makeJSONLyricDataInstance();
     run();
-    await init();
-
 }
 // var db = firebase.firestore();
 
@@ -40,17 +39,18 @@ var arrayOfIndexes = 0;
 
 function saveLyricData(lyricData, commentData, clickNumber, playlistValue) {
     //saveLyricData(['searchText', 'healing begins']);
-    if (arrayOfIndexes == 0) {
+    if (myJSONLyricData.JSONobj.innerArray.length == 0) {
         // myJSONLyricData.addToObj([[0, ['listName', '1']]]);
         // myJSONLyricData.addToObj([[0, [['lyricData', lyricData], ['clickNumber', clickNumber], ['comments', commentData]]]]);
 
         // main staring of JSON obj
-        myJSONLyricData.addToObj([[[0], ['email', savedMainEmail]]])
+        myJSONLyricData.addToObj([[[0], [['email', savedMainEmail]]]])
 
         // arrayOfIndexes++
 
         // first lyric added
-        myJSONLyricData.addToObj([[[0], ['lyricData', lyricData], ['commentData', commentData], ["clickNumber", clickNumber], ['playlistValue', 'main']]]);
+        // debugger; 				//debugger command
+        myJSONLyricData.addToObj([[[0], [['lyricData', lyricData], ['commentData', commentData], ["clickNumber", clickNumber], ['playlistValue', 'main']]]]);
 
         myJSONLyricData.print();
         // console.log('arrayOfIndexes: ', arrayOfIndexes);
@@ -59,7 +59,7 @@ function saveLyricData(lyricData, commentData, clickNumber, playlistValue) {
         // var increase = arrayOfIndexes++;
 
         // another lyric added
-        myJSONLyricData.addToObj([[[0], ['lyricData', lyricData], ['commentData', commentData], ["clickNumber", clickNumber], ['playlistValue', 'main']]]);
+        myJSONLyricData.addToObj([[[0], [['lyricData', lyricData], ['commentData', commentData], ["clickNumber", clickNumber], ['playlistValue', 'main']]]]);
 
         myJSONLyricData.print();
 

@@ -1,7 +1,7 @@
-window.onload = async ()=>{
-    makeEventListeners();
-    await emailChecker();
-} 
+// window.onload = async ()=>{
+    // makeEventListeners();
+    // await emailChecker();
+// } 
 
 var savedMainEmail = 'sammuel@gmail.com';
 async function emailChecker(){
